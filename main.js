@@ -12,8 +12,9 @@ const createWindow = () => {
   win.loadFile('index.html');
 };
 
+ipcMain.handle('ping', () => console.log('ping'))
+
 app.whenReady().then(() => {
-  ipcMain.handle('ping', (e) => console.log('ping'))
   createWindow();
 
   // mac 系统

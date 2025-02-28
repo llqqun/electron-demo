@@ -4,9 +4,10 @@
   "main": "main.js",
   "scripts": {
     "start": "electron-forge start",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "example": "electron ./example/accessDevice/main.js",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "make": "electron-forge make",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
